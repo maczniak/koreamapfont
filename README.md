@@ -120,6 +120,12 @@ HTML `header`에 CSS 파일을 포함합니다.
 
 http://maczniak.github.com/koreamapfont/
 
+참고
+----
+
+* Stately: https://github.com/intridea/stately
+* GeoBats: http://www.dafont.com/font.php?file=geobats
+
 TODO
 ----
 
