@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>koreamapfont</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="http://maczniak.github.com/bootstrap/assets/css/bootstrap-ko.css" rel="stylesheet" media="screen">
+    <link href="http://maczniak.github.com/bootstrap/assets/css/bootstrap-responsive.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="assets/css/korea-map-font-v1.css">
+    <style>
+      .korea-map-font-v1 {
+        width: 200px;
+        font-size: 200px;
+        color: #555;
+      }
+      .korea-map-font-v1 li { /* bootstrap hack */
+        line-height: 200px;
+      }
+      #map1 .경기,
+      #map1 .경북 {
+        color: #FF0000;
+      }
+      
+      #map2 {
+        width: 500px;
+        font-size: 500px;
+        color: #555;
+      }
+      #map2 li { /* bootstrap hack */
+        line-height: 500px;
+      }
+      /* South Korean regions by GDP per capita (PPP, 2010) */
+      #map2 .울산 { color: #2424ff; }
+      #map2 .충남 { color: #6b6bff; }
+      #map2 .전남 { color: #8080ff; }
+      #map2 .세종,
+      #map2 .경북 { color: #9494ff; }
+      #map2 .서울,
+      #map2 .경남 { color: #a8a8ff; }
+      #map2 .충북 { color: #b3b3ff; }
+      #map2 .인천,
+      #map2 .전북,
+      #map2 .강원,
+      #map2 .경기 { color: #c7c7ff; }
+      #map2 .제주 { color: #d1d1ff; }
+      #map2 .부산,
+      #map2 .대전,
+      #map2 .광주 { color: #dbdbff; }
+      #map2 .대구 { color: #e6e6ff; }
+      
+      /* syntax highlight - koreamapfont와 무관 */
+      .highlight .nt { color: #000080; }
+      .highlight .na { color: #008080; }
+      .highlight .s { color: #d14; }
+      .highlight .nc { color: #445588; font-weight: bold; }
+      .highlight .k { font-weight: bold; }
+      .highlight .o { font-weight: bold; }
+      .highlight .m { color: #009999; }
+      .highlight .err { color: #a61717; background-color: #e3d2d2; }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="hero-unit">
+        <h1>koreamapfont</h1>
+        <p class="lead">HTML과 CSS만으로 쉽게 한국 지도를 그려보자.</p>
+        <p><a class="btn btn-primary btn-large" href="koreamapfont.zip">다운로드</a>
+        <a class="btn btn-large" href="https://github.com/maczniak/koreamapfont">프로젝트 문서</a></p>
+      </div>
+      
+      <div class="row-fluid">
+        <div class="span6">
+          <p>글꼴과 CSS 파일을 다운로드하고, HTML에 CSS 파일을 포함한다.<p>
+          <div class="highlight"><pre><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"assets/css/korea-map-font-v1.css"</span><span class="nt">&gt;</span></pre></div>
+          <p>지도를 그릴 곳에 다음과 같이 추가한다.</p>
+          <div class="highlight"><pre><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"korea-map-font-v1"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"강원"</span><span class="nt">&gt;</span>a<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"경기"</span><span class="nt">&gt;</span>b<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"경남"</span><span class="nt">&gt;</span>c<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"경북"</span><span class="nt">&gt;</span>d<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"광주"</span><span class="nt">&gt;</span>e<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"대구"</span><span class="nt">&gt;</span>f<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"대전"</span><span class="nt">&gt;</span>g<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"부산"</span><span class="nt">&gt;</span>h<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"서울"</span><span class="nt">&gt;</span>i<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"세종"</span><span class="nt">&gt;</span>j<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"울산"</span><span class="nt">&gt;</span>k<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"인천"</span><span class="nt">&gt;</span>l<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"전남"</span><span class="nt">&gt;</span>m<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"전북"</span><span class="nt">&gt;</span>n<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"제주"</span><span class="nt">&gt;</span>o<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"충남"</span><span class="nt">&gt;</span>p<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"충북"</span><span class="nt">&gt;</span>q<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span></pre></div>
+          <p>마지막으로 지도의 크기와 기본 색을 지정하고, 필요하다면 행정구역마다 색을 입힌다.</p>
+          <div class="highlight"><pre><span class="nc">.korea-map-font-v1</span> <span class="p">{</span>
+  <span class="k">width</span><span class="o">:</span> <span class="m">300px</span><span class="p">;</span>
+  <span class="k">font-size</span><span class="o">:</span> <span class="m">300px</span><span class="p">;</span>
+  <span class="k">color</span><span class="o">:</span> <span class="m">#f0f0f0</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="o">.</span><span class="err">경기</span><span class="o">,</span> <span class="o">.</span><span class="err">경북</span> <span class="p">{</span>
+  <span class="k">color</span><span class="o">:</span> <span class="m">#FF0000</span><span class="p">;</span>
+<span class="p">}</span></pre></div>
+        </div>
+        <div class="span6">
+          <ul class="korea-map-font-v1" id="map1">
+            <li class="강원">a</li>
+            <li class="경기">b</li>
+            <li class="경남">c</li>
+            <li class="경북">d</li>
+            <li class="광주">e</li>
+            <li class="대구">f</li>
+            <li class="대전">g</li>
+            <li class="부산">h</li>
+            <li class="서울">i</li>
+            <li class="세종">j</li>
+            <li class="울산">k</li>
+            <li class="인천">l</li>
+            <li class="전남">m</li>
+            <li class="전북">n</li>
+            <li class="제주">o</li>
+            <li class="충남">p</li>
+            <li class="충북">q</li>
+          </ul>
+          <ul class="korea-map-font-v1" id="map2">
+            <li class="강원">a</li>
+            <li class="경기">b</li>
+            <li class="경남">c</li>
+            <li class="경북">d</li>
+            <li class="광주">e</li>
+            <li class="대구">f</li>
+            <li class="대전">g</li>
+            <li class="부산">h</li>
+            <li class="서울">i</li>
+            <li class="세종">j</li>
+            <li class="울산">k</li>
+            <li class="인천">l</li>
+            <li class="전남">m</li>
+            <li class="전북">n</li>
+            <li class="제주">o</li>
+            <li class="충남">p</li>
+            <li class="충북">q</li>
+          </ul>
+          <ul class="korea-map-font-v1" id="map3">
+            <li class="북강원">r</li>
+            <li class="남포시">s</li>
+            <li class="라선시">t</li>
+            <li class="량강도">u</li>
+            <li class="자강도">v</li>
+            <li class="평안남">w</li>
+            <li class="평안북">x</li>
+            <li class="평양시">y</li>
+            <li class="함경남">z</li>
+            <li class="함경북">{</li>
+            <li class="황해남">|</li>
+            <li class="황해북">}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
