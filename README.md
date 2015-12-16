@@ -7,7 +7,7 @@ koreamapfont
 문자와 행정구역은 다음과 같이 대응했습니다.
 
 [stately]: https://github.com/intridea/stately
-[making]: https://github.com/intridea/stately/blob/master/MAKING.md
+[making]: https://github.com/maczniak/koreamapfont/blob/master/MAKING.md
 
 <table>
 <tr><td rowspan="5">남한</td><td>강원도</td><td>a</td>
